@@ -36,7 +36,7 @@ Key features:
 ### 4. Model Training
 - **XGBoost** (for speed & interpretability) for the prototype will later move to an LSTM Neural Network.
 - Evaluation and registration in the **Model Registry**.
-- Lime to explain Predictions 
+- Lime to explain Predictions(Later Addition)
 
 ### 5. Drift Monitoring
 - **Evidently AI** checks model performance and data distribution on regular intervals.
@@ -49,7 +49,7 @@ Key features:
 
   - **Model Metrics** – Prediction latency, prediction throughput, accuracy over time, drift detection results  
   - **Pipeline Metrics** – ETL job runtimes, data freshness, retraining frequency  
-  - **System Metrics** – CPU/memory utilization, container uptime, API request/response rates, error counts  
+  - **System Metrics** – CPU/memory utilization, container uptime, API request/response rates, error counts(Maybe)
 
 
 
