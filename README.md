@@ -16,7 +16,7 @@ Key features:
 ---
 
 ## 🛠 System Architecture
-![System Architecture Diagram](path/to/diagram.png) <!-- Replace with actual image path -->
+![System Architecture Diagram](/Livedrift-System-Design.png) <!-- Replace with actual image path -->
 
 ### 1. Data Sources
 - **yfinance** – Stock prices & technical indicators.
