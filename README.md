@@ -2,7 +2,7 @@
 
 **Status:** *This project is currently in active development. Components will be implemented incrementally.*
 
-## 📌 Overview
+## Overview
 **LiveDrift** is a real-time machine learning system designed to forecast short-term stock market trends while actively monitoring for model drift. The system automatically triggers retraining when performance degrades due to shifting market conditions.
 
 Key features:
@@ -15,8 +15,11 @@ Key features:
 
 ---
 
-## 🛠 System Architecture
-![System Architecture Diagram](/Livedrift-System-Design.png) <!-- Replace with actual image path -->
+##  System Architecture
+
+<a href="frontend-clausebit/public/assets/main-demo.mp4">
+  <img src="/Livedrift-System-Design.png" alt="Demo" width="700">
+</a>
 
 ### 1. Data Sources
 - **yfinance** – Stock prices & technical indicators.
@@ -24,24 +27,31 @@ Key features:
 - **Finnhub API** – ESG scores and market insights.
 
 ### 2. Data Warehouse
-- Centralized storage in **Amazon S3** for raw and processed datasets.
+- Centralized storage in **Amazon S3 or GCP Buckets ** for raw and processed datasets.
 
 ### 3. Data Processing & Feature Engineering
-- Data preprocessing for missing values, normalization, and transformations.
+- Data preprocessing for missing values, normalization or standardization, and transformations.
 - Technical Analysis (TA) feature pipeline.
 
 ### 4. Model Training
-- Choice of **LSTM** (for sequential modeling) or **XGBoost** (for speed & interpretability).
+- **XGBoost** (for speed & interpretability) for the prototype will later move to an LSTM Neural Network.
 - Evaluation and registration in the **Model Registry**.
+- Lime to explain Predictions 
 
 ### 5. Drift Monitoring
 - **Evidently AI** checks model performance and data distribution on regular intervals.
 - Drift above threshold triggers retraining via Airflow.
 
 ### 6. Serving & Observability
-- **FastAPI** inference service (Docker on AWS Lambda or alternative).
-- Live demo (Streamlit – maybe) for end-user interaction.
-- Metrics & logs via **Prometheus & Grafana**.
+- **FastAPI** inference service (Dockerized, deployable to AWS Lambda or GCP Cloud Run)  
+- Optional **Streamlit** live demo for end-user interaction  
+- **Prometheus** collects metrics and logs, visualized in **Grafana**, including:
+
+  - **Model Metrics** – Prediction latency, prediction throughput, accuracy over time, drift detection results  
+  - **Pipeline Metrics** – ETL job runtimes, data freshness, retraining frequency  
+  - **System Metrics** – CPU/memory utilization, container uptime, API request/response rates, error counts  
+
+
 
 ### 7. Automation
 - **Apache Airflow** schedules and orchestrates:
@@ -51,7 +61,7 @@ Key features:
 
 ---
 
-## 🚀 Development Plan
+##  Development Plan
 
 | Phase  | Description |
 |--------|-------------|
@@ -63,4 +73,4 @@ Key features:
 
 ---
 
-## 📂 Repository Structure (Planned)
+
