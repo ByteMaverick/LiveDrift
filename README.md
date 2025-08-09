@@ -17,8 +17,8 @@ Key features:
 
 ##  System Architecture
 
-<a href="frontend-clausebit/public/assets/main-demo.mp4">
-  <img src="/Livedrift-System-Design.png" alt="Demo" width="700">
+<a >
+  <img src="/System-Architecture.png" alt="Demo" width="700">
 </a>
 
 ### 1. Data Sources
