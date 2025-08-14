@@ -1,6 +1,6 @@
 # LiveDrift – Drift-Aware Stock Predictor
 
-**Status:** *This project is currently in active development. Components will be implemented incrementally.*
+**Status:** * During prototyping, I realized that creating a truly trustworthy and usable real-time stock prediction system would require substantial resources (time, infrastructure, and capital). Combined with the prototype model not meeting my accuracy benchmarks, I decided to pause development. I’m now focusing on DockFlow, a real-time bike dock availability prediction platform leveraging similar MLOps and data engineering concepts.*
 
 ## Overview
 **LiveDrift** is a real-time machine learning system designed to forecast short-term stock market trends while actively monitoring for model drift. The system automatically triggers retraining when performance degrades due to shifting market conditions.
