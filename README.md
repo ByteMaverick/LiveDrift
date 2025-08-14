@@ -1,6 +1,6 @@
 # LiveDrift – Drift-Aware Stock Predictor
 
-**Status:** During prototyping, I realized that creating a truly trustworthy and usable real-time stock prediction system would require substantial resources (time, infrastructure, and capital). Combined with the prototype model not meeting my accuracy benchmarks, I decided to pause development. I’m now focusing on [DockFlow](https://github.com/ByteMaverick/DockFlow), a real-time bike dock availability prediction platform leveraging similar MLOps and data engineering concepts.
+*<strong>Status:</strong> During prototyping, I realized that creating a truly trustworthy and usable real-time stock prediction system would require substantial resources (time, infrastructure, and capital). Combined with the prototype model not meeting my accuracy benchmarks, I decided to pause development. I’m now focusing on [DockFlow](https://github.com/ByteMaverick/DockFlow), a real-time bike dock availability prediction platform leveraging similar MLOps and data engineering concepts.*
 
 
 
